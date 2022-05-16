@@ -46,15 +46,4 @@ A estrutura de diretórios é
 - Abrir um browser e digitar "localhost:3546"
 - Deve aparecer uma pagina HTLM que permite navegar pelo CRUD
 
-## Atividades 
-Criar uma calculadora, com as operações básicas, e apresentar na lateral as operações efetuadas
-DICA: 
-    Usar uma única chave e sobreescrever o valor, e chamar o método getHistoryByKey
-    OU usar chaves diferentes para cada operação, e utilizar o método getStateByRange
-    <img width="1057" alt="Screen Shot 2022-05-06 at 11 57 42 AM" src="https://user-images.githubusercontent.com/24461013/167159608-d7bcdadf-fcba-420e-97c1-bc18dd2e1639.png">
-
-    
-## outras ideias de atividades
-### Implementar os métodos do contrato Java no contrato JavaScript
-### Criar um contrato GO e criar os métodos que estão em Java
 
