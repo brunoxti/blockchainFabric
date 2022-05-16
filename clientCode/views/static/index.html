@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //function that display value
+            function dis(val)
+            {
+                document.getElementById('operation').value = val
+            }
+              
+            //function that evaluates the digit and return result
+            function solve()
+            {
+                let x = document.getElementById("result").value
+                let y = eval(x)
+                document.getElementById("result").value = y
+            }
+              
+            //function that clear the display
+            function clr()
+            {
+                document.getElementById("result").value = ""
+            }
+         </script>
+        <style>
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 20px 20px;
+          cursor: pointer;
+        }
+        body
+        {
+        margin: 80px 100px 50px 80px;
+        }
+        </style>
+        </head>
+   <body>
+   
+        <h1> 
+            Calculator
+        </h1>
+        <form action="/calcule">
+           chave <input name="chave" type="label" value="0001"/>
+           valor1 <input name="valor1" type="text"/>
+           valor2 <input name="valor2" type="text"/>
+           <div>
+            <input id="+" name="operation1" type="button" class="button" value="+" onclick="dis('+')">
+            <input id="-" name="operation2" type="button" class="button" value="-" onclick="dis('-')">
+            <input id="*" name="operation3" type="button" class="button" value="*" onclick="dis('*')">
+            <input id="/" name="operation4" type="button" class="button" value="/" onclick="dis('/')">
+
+            <input id="operation" name="operation" type="text" hidden value=""">
+           </div>
+        
+           
+
+           <input type="submit" />
+        </form>
+
+       <h1> 
+           Historico das operações
+       </h1>
+       <form action="/getHistoryByKey">
+          chave <input name="chave" type="text"/>
+          <input type="submit" />
+       </form>
+       
+   </body>
+</html>
